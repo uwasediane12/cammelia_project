@@ -1,0 +1,10 @@
+<?php
+include_once("homepage.php");
+?>
+<?php
+session_start();
+unset($_SESSION['UserName']);
+unset($_SESSION['Password']);
+session_destroy();
+header("location:login.php");
+?>
